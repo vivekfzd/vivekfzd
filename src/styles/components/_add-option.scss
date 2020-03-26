@@ -1,0 +1,37 @@
+.add-option-error{
+    margin:$m-size 0 0 0;
+    font-style: italic;
+    color:$off-white;
+    padding: 0 $m-size;
+
+}
+
+.add-option{
+    display:flex;
+    flex-direction: column;
+    padding:$m-size;
+    
+}
+.add-option__input{
+    border:none;
+    background:$dark-blue;
+    border-bottom:.3rem solid darken($dark-blue, 10%);
+    //margin-right:$m-size;
+    margin:0 0 $s-size 0;
+    color:$off-white;
+    padding:$s-size;
+    flex-grow: 1;
+}
+
+@media(min-width: $destop-breakpoint){
+   .add-option{
+       flex-direction: row;
+   }
+
+   .add-option__input{
+    margin:0 $s-size 0 0;
+    }
+
+    
+
+}
